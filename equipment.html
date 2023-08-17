@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="simplelightbox-master/dist/simple-lightbox.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Retail Camping Company (RCC)</title>
 </head>
@@ -10,7 +11,7 @@
     <header>
         <h1>Retail Camping Company (RCC)</h1>
     </header>
-    <nav>
+    <nav id="navbar">
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="#" class="active">Equipment</a></li>
@@ -23,52 +24,52 @@
     <main>
         <div class="container">
             <h2>Product Catalog</h2>
-            <section class="product-catalog">
+            <section class="product-catalog gallery">
                 <div class="product-item">
-                    <img src="photo/tent1.jpg" alt="Tent">
+                    <a href="photo/tent1.jpg"><img src="photo/tent1.jpg" alt="Tent"></a>
                     <h3>Explorer Dome Tent</h3>
                     <p>Experience the outdoors in style with our spacious and durable dome tent. Perfect for camping adventures.</p>
                     <span class="price">$199.99</span>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="photo/cooker1.jpg" alt="Cooker">
+                    <a href="photo/cooker1.jpg"><img src="photo/cooker1.jpg" alt="Cooker"></a>
                     <h3>Camp Chef Portable Stove</h3>
                     <p>Cook your favorite meals in the wilderness with our portable camp stove. Reliable and easy to use.</p>
                     <span class="price">$49.99</span>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="photo/solar.jpg" alt="Solar">
+                    <a href="photo/solar.jpg"><img src="photo/solar.jpg" alt="Solar"></a>
                     <h3>Solar Board</h3>
                     <p>Cook your favorite meals in the wilderness with our portable camp stove. Reliable and easy to use.</p>
                     <span class="price">$102.77</span>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="photo/cooker2.jpg" alt="Cooker2">
+                    <a href="photo/cooker2.jpg"><img src="photo/cooker2.jpg" alt="Cooker2"></a>
                     <h3>Multi Cookers</h3>
                     <p>Cook your favorite meals in the wilderness with our portable camp stove. Reliable and easy to use.</p>
                     <span class="price">$20.67</span>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="photo/chair.jpg" alt="Cooker">
+                    <a href="photo/chair.jpg"><img src="photo/chair.jpg" alt="Cooker"></a>
                     <h3>Chair</h3>
                     <p>Cook your favorite meals in the wilderness with our portable camp stove. Reliable and easy to use.</p>
                     <span class="price">$12.90</span>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="photo/bagPack.jpg" alt="Cooker">
+                    <a href="photo/bagPack.jpg"><img src="photo/bagPack.jpg" alt="Cooker"></a>
                     <h3>Full Bag Pack</h3>
                     <p>Cook your favorite meals in the wilderness with our portable camp stove. Reliable and easy to use.</p>
                     <span class="price">$32.49</span>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="photo/coolBox.jpg" alt="Cooker">
-                    <h3>Cool Box</h3>
+                    <a href="photo/coolBox.jpg"><img src="photo/coolBox.jpg" alt="Cooker"></a>
+                    <h3>Chair</h3>
                     <p>Cook your favorite meals in the wilderness with our portable camp stove. Reliable and easy to use.</p>
                     <span class="price">$25.30</span>
                     <button class="add-to-cart">Add to Cart</button>
@@ -79,8 +80,19 @@
         
     </main>
     <footer>
-        <p>&copy; 2023 Retail Camping Company (RCC) website. All rights reserved.</p>
+        <p class="footer-p">&copy; 2023 Retail Camping Company (RCC) website. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" class="social-icon"><img src="photo/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com/?lang=en" class="social-icon"><img src="photo/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" class="social-icon"><img src="photo/instagram-icon.png" alt="Instagram"></a>
+        </div>
     </footer>
+
+<script src="simplelightbox-master/dist/simple-lightbox.min.js"></script>
+<script src="simplelightbox-master/dist/simple-lightbox.legacy.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="simplelightbox-master/dist/simple-lightbox.jquery.min.js"></script>
+<script src="Fully-Responsive-Flexible-jQuery-Carousel-Plugin-slick/slick/slick.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

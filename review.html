@@ -10,7 +10,7 @@
     <header>
         <h1>Retail Camping Company (RCC)</h1>
     </header>
-    <nav>
+    <nav id="navbar">
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="equipment.html">Equipment</a></li>
@@ -21,11 +21,75 @@
         </ul>
     </nav>
     <main>
+        <div class="container">
+            <h2>Product Reviews</h2>
+            <section class="review-form">
+                <h3>Leave a Review</h3>
+                <form id="reviewForm">
+                    <label for="productName">Product Name:</label>
+                    <select id="productName" name="productName">
+                        <option value="Explorer Dome Tent">Explorer Dome Tent</option>
+                        <option value="Camp Chef Portable Stove">Camp Chef Portable Stove</option>
+                        <option value="Solar Board">Solar Board</option>
+                        <option value="Multi Cookers">Multi Cookers</option>
+                        <option value="Chair">Chair</option>
+                        <option value="Full Bag Pack">Full Bag Pack</option>
+                        <option value="Cool Box">Cool Box</option>
+                    </select>
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                    <label for="review">Your Review:</label>
+                    <textarea id="review" name="review" rows="4"></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+            <section class="reviews-list">
+                <ul id="reviewsList" class="clearfix">
+                    <li class="review-card">
+                        <h3>Explorer Dome Tent</h3>
+                        <div class="rating">
+                            Rating: ⭐⭐⭐⭐
+                        </div>
+                        <p>Amazing tent! Easy to set up and spacious. Loved using it on my camping trip.</p>
+                    </li>
+                    <li class="review-card">
+                        <h3>Camp Chef Portable Stove</h3>
+                        <div class="rating">
+                            Rating: ⭐⭐
+                        </div>
+                        <p>Good portable stove for cooking outdoors. It's lightweight and reliable.</p>
+                    </li>
+                    <li class="review-card">
+                        <h3>Full Bag Pack</h3>
+                        <div class="rating">
+                            Rating: ⭐⭐⭐⭐⭐
+                        </div>
+                        <p>Comfy chair for relaxing by the campfire. It folds up nicely for easy transport.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
         
     </main>
     <footer>
-        <p>&copy; 2023 Retail Camping Company (RCC) website. All rights reserved.</p>
+        <p class="footer-p">&copy; 2023 Retail Camping Company (RCC) website. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" class="social-icon"><img src="photo/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com/?lang=en" class="social-icon"><img src="photo/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" class="social-icon"><img src="photo/instagram-icon.png" alt="Instagram"></a>
+        </div>
     </footer>
+<script src="simplelightbox-master/dist/simple-lightbox.min.js"></script>
+<script src="simplelightbox-master/dist/simple-lightbox.legacy.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="simplelightbox-master/dist/simple-lightbox.jquery.min.js"></script>
+<script src="Fully-Responsive-Flexible-jQuery-Carousel-Plugin-slick/slick/slick.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
