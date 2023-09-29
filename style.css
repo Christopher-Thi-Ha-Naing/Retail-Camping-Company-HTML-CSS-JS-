@@ -23,7 +23,8 @@ header {
 /* style for the navigation menu */
 
 #navbar {
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
+    font-size: 1.1rem;
     position: sticky;
     top: 0;
     background-color: #333;
@@ -64,6 +65,12 @@ nav ul li a.active {
 
 
 /* style for the main content */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     width: 85%;
     margin: 0 auto;
@@ -71,6 +78,38 @@ nav ul li a.active {
     border: 0px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #b5b2b2;
+}
+
+/* styles for search box */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-title {
+    margin: 0;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchInput {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searchButton {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* styles for Special Offers section */
@@ -228,7 +267,6 @@ nav ul li a.active {
     background-color: #e68300;
 }
 
-/* style for the cart items */
 .cart-items {
     margin-top: 1em;
     padding: 1em;
@@ -245,11 +283,43 @@ nav ul li a.active {
     margin-bottom: 0.5em;
 }
 
-/* style for the total amount */
+/* Styling for the total amount */
 .total {
     margin-top: 1em;
     text-align: right;
     font-weight: bold;
+}
+
+/* Styling for remove item button */
+.remove-from-cart {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.remove-from-cart:hover {
+    background-color: #c0392b;
+}
+
+/* Styling for clear cart button */
+#clearCartButton {
+    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#clearCartButton:hover {
+    background-color: #2980b9;
 }
 
 .review-form {
@@ -263,6 +333,14 @@ nav ul li a.active {
 .review-form label {
     display: block;
     margin-bottom: 0.5em;
+}
+
+.review-input{
+    width: 10%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .review-form select,
@@ -284,6 +362,27 @@ nav ul li a.active {
 
 .review-form button:hover {
     background-color: #ff9900;
+}
+
+/* Style for Q and A */
+.sample-qa {
+    margin-bottom: 20px;
+}
+
+.qa-list {
+    list-style: none;
+    padding: 0;
+}
+
+.qa-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.qa-item h4 {
+    margin-top: 0;
 }
 
 /* Style for review cards */
@@ -321,7 +420,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
+    margin-top: auto;}
 
 .footer-p {
     margin-left: 10%;
@@ -335,8 +434,9 @@ footer {
 }
 
 .social-icon img {
-    width: 30px;
-    height: 30px;
+    margin: 0.2rem;
+    width: 25px;
+    height: 25px;
     transition: transform 0.2s;
 }
 

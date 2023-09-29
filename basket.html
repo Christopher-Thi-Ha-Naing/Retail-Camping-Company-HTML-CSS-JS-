@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Fully-Responsive-Flexible-jQuery-Carousel-Plugin-slick/slick/slick.css">
+    <link rel="stylesheet" href="Fully-Responsive-Flexible-jQuery-Carousel-Plugin-slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="simplelightbox-master/dist/simple-lightbox.min.css">
+    <link rel="stylesheet" href="Customizable-jQuery-Modal-Dialog-Plugin-with-CSS3-Animations-jAlert/src/jAlert.css">
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <title>Retail Camping Company (RCC)</title>
 </head>
@@ -17,20 +22,21 @@
             <li><a href="furniture.html">Furniture</a></li>
             <li><a href="review.html">Reviews</a></li>
             <li><a href="#" class="active">Basket</a></li>
-            <li><a href="offers.html">Offers</a></li>
+            <li><a href="offers.html">Offers and Packages</a></li>
         </ul>
     </nav>
     <main>
         <div class="container">
             <h2>Your Basket</h2>
-            <section class="cart-items">
+            <div class="cart-items">
                 <ul id="cartList">
                     <!-- Cart items will be displayed here -->
                 </ul>
                 <div class="total">
                     <strong>Total: </strong><span id="totalAmount">$0.00</span>
                 </div>
-            </section>
+                <button id="clearCartButton">Clear Cart</button>
+            </div>
         </div>
     </main>
     <footer>
@@ -46,6 +52,8 @@
 <script src="jquery.min.js"></script>
 <script src="simplelightbox-master/dist/simple-lightbox.jquery.min.js"></script>
 <script src="Fully-Responsive-Flexible-jQuery-Carousel-Plugin-slick/slick/slick.js"></script>
+<script src="Customizable-jQuery-Modal-Dialog-Plugin-with-CSS3-Animations-jAlert/src/jAlert.js"></script>
+<script src="Customizable-jQuery-Modal-Dialog-Plugin-with-CSS3-Animations-jAlert/src/jAlert-functions.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
